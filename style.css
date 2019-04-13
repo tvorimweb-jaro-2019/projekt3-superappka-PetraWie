@@ -31,3 +31,82 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+.menu {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display:inline-block;
+    padding: 30px;
+}
+
+.vizualpozadi { /* nic to nedělá, když se snažím měnit šířku */
+    /* display: block; */
+    width:100%; /* nastavila jsem stejně jako obal */
+    height:auto;
+    position: relative;
+    flex-shrink: inherit;
+}
+
+.vizual2vrstva { /* nejde mi n */
+    position: absolute;
+    background-image: "image(pozadi.jpg)"
+}
+
+.nadpis {
+    position: absolute;
+    right: 700px;
+    top: 200px;
+    font-size: 68px
+}
+
+.popis {
+    position: absolute;
+    right:700px ;
+    bottom: 30px;
+}
+
+.tlacitkostahnout {
+position: absolute;
+right: 1000px;
+top: 700px; /* chtěla jsem zarovnat k bottom, ale to dělá divný věci */
+border: 1px solid white;
+border-radius: 10px 10px 10px 10px;
+color:white;
+padding:10px;
+background-color: #48418e;
+}
+
+.tlacitkoinfo {
+position: absolute;
+right: 700px;
+top: 700px;
+border: 1px solid white;
+border-radius: 10px 10px 10px 10px;
+color:white;
+padding: 10px;
+background-color: transparent;
+}
+
+.spodnicast {
+    display:flex;
+}
+.cestuj {order: 1;
+    padding:10px;
+    text-align: center;
+        ;}
+
+.chatuj {order: 2;}
+
+.zažij  {order: 3;}
+
+.paticka {
+    background-color: #25133d;
+}
+
+.text { /* nejde mi zarovnat text na střed :-O */
+    color: white;
+    display: inline-block;/* když dám inline block automaticky mi 
+    z toho vznikne box s paddingem? */
+    align-content: center;
+}
