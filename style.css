@@ -45,21 +45,26 @@ li {
     font-weight: 700;
 }
 
-.vizualpozadi { 
-    /* width:960px;
-    height:400px; */
-    position: relative;
-    /* flex-shrink: inherit; */
+.ruka { 
+    /* background-image: "pozadi"; TO JE BLBOST*/
+    position: absolute;
+    right: 0%; /* TÍMTO ŘÍKÁM NAPOZICUJ SE VŮČI RODIČI DO SPODNÍHO 
+    PRAVÉHO ROHU S NULOVOU ODCHYLKOU OD SPODU I OD PRAVA */
+    bottom: 0;
 }
 
-.vizual2vrstva { 
-    background-image: "pozadi";
-     /* position: fixed;
-    right: 780px;
-    top: 133px;  */
-    width: 50%;
-    float: right;
+.vizual{ 
+background-image: url("images/pozadi.jpg");
+position: relative; 
+width:960px;
+height:400px;
 }
+/* .vizualpozadi { 
+    /* width:960px;
+    height:400px;
+    position: relative;
+    /* flex-shrink: inherit;
+} */
 
 /* .hlavnitext {
     width:50%;
@@ -67,30 +72,25 @@ li {
 } */
 
 .nadpis {
-    position: absolute;
-    left: 850px;
-    top: 60px;
+    /* position: absolute; když dám absolut znamená to, že je vyjmutý z toku dokumentu, jako by tam nebyl pro ostatní, pozicují se také, jako by tam nebyl/ pozn. relazive zustava v toku dokumentu */ 
     font-size: 60px;
     font-family: "Roboto", sans-serif;
     font-weight: 150    ;
     color: white;
-    
+    padding: 20px 0 0 30px;   
 }
 
 .popis {
-    position: absolute;
-    left: 850px;
-    top: 250px;
+    /* position: absolute;  */
     font-size: 28px;
     font-family: "Roboto", sans-serif;
     font-weight: 150;
-    color: whitesmoke;  
+    color: whitesmoke; 
+    padding-left: 30px;   
 }
 
 .tlacitkostahnout {
-position: absolute;
-right: 1475px;
-top: 420px; /* chtěla jsem zarovnat k bottom, ale to dělá divný věci */
+position: absolute; 
 border: 1px solid white;
 border-radius: 10px 10px 10px 10px;
 color:white;
@@ -98,12 +98,12 @@ padding:1em 2em 1em 2em;
 background-color: #48418e;
 font-size: 20px;
 text-decoration: none;
+margin-left: 30px;
+bottom: 20px;
 }
 
 .tlacitkoinfo {
 position: absolute;
-right: 1200px;
-top: 420px;
 border: 1px solid white;
 border-radius: 10px 10px 10px 10px;
 color:white;
@@ -111,12 +111,16 @@ padding:1em 2em 1em 2em;
 background-color: transparent;
 font-size: 20px;
 text-decoration: none;
+margin-left: 300px;
+bottom: 20px;
 }
 
 .spodnicast {
-    display:flex;
+   display:flex;
+   background-color: white;
     }
     .cestuj {order: 1;
+    
     padding:10px;
     text-align: center;
     padding: 2em;
